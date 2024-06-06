@@ -14,13 +14,13 @@ describe("template spec", () => {
       .click({ force: true })
       .type("qwe123!@#");
     cy.get(".auth-actions > .is-solid-secondary").click();
-    cy.wait(5000);
+    cy.wait(4000);
     // select Tour
     cy.get(":nth-child(5) > .tab-links-item").click();
     //Select items from the form
     cy.contains("مبدا (شهر)").click();
     cy.contains("تهران").click();
-    cy.wait(2000);
+    cy.wait(1000);
     // cy.get(".is-active").eq(3).click();
     cy.contains("مشهد").click();
     // select 3 night vacetion
@@ -34,7 +34,7 @@ describe("template spec", () => {
     cy.get("button.btn.is-lg.is-solid-secondary.is-block.text-3").click();
     // search
     cy.get("button.btn.is-lg.is-solid-primary.is-block.h-full").click();
-    cy.wait(8000);
+    cy.wait(10000);
     cy.contains("محل اقامت مورد نظر برای تور خود را انتخاب کنید").should(
       "exist"
     );
@@ -96,10 +96,10 @@ describe("template spec", () => {
 
     // cy.get(".a-input__input").each((element, index) => {
     //   if (index === 0) {
-    //     // فقط برای اولین المان تایپ کن
+
     //     cy.wrap(element).type(texts[index]);
     //   } else {
-    //     // برای المانهای بعدی، ابتدا کلیک کن و سپس تایپ کن
+
     //     cy.wrap(element)
     //       .click()
     //       .then(() => {
