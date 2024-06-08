@@ -14,9 +14,9 @@ describe("template spec", () => {
       .click({ force: true })
       .type("qwe123!@#");
     cy.get(".auth-actions > .is-solid-secondary").click();
-    cy.wait(4000);
+    // cy.wait(5000);
     // select Tour
-    cy.get(":nth-child(5) > .tab-links-item").click();
+    cy.get(":nth-child(5) > .tab-links-item").should("be.visible").click();
     //Select items from the form
     cy.contains("مبدا (شهر)").click();
     cy.contains("تهران").click();
@@ -48,6 +48,7 @@ describe("template spec", () => {
     cy.visit(
       "https://www.alibaba.ir/tour/iran-tehran/iran-mashhad/24557?from=2024-06-27&to=2024-06-30&rooms=1"
     );
+    cy.wait(5000);
     cy.contains("اشتراک گذاری تورهای این هتل").should("exist");
     cy.get("button.btn.is-md.is-solid-secondary.my-2")
       .first()
