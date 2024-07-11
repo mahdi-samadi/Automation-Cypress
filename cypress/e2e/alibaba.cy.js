@@ -18,11 +18,11 @@ describe("template spec", () => {
     // select Tour
     cy.get(":nth-child(5) > .tab-links-item").should("be.visible").click();
     //Select items from the form
-    cy.contains("مبدا (شهر)").click();
-    cy.contains("تهران").click();
-    cy.wait(1000);
+    cy.contains("مبدا (شهر)").should("be.visible").click();
+    cy.contains("تهران").should("be.visible").click();
+    cy.wait(2000);
     // cy.get(".is-active").eq(3).click();
-    cy.contains("مشهد").click();
+    cy.contains("مشهد").should("be.visible").click();
     // select 3 night vacetion
     cy.get(".block.font-medium.text-3").eq(2).click();
     // cy.contains("تعطیلات آخر هفته (3 شب)").click();
