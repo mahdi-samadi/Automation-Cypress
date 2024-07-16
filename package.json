@@ -1,7 +1,6 @@
 {
   "name": "cypressalibaba",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.10.0",
     "cypress-real-events": "^1.12.0"
-  }
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0"
+  },
+  "description": ""
 }
