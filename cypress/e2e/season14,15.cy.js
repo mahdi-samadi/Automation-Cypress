@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 describe("Session14 - Assertions", function () {
   it("Attributes - Get Link", function () {
