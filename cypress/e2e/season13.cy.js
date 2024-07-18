@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+
 describe("Session 13", function () {
   it("Usage of its()", function () {
     cy.viewport(500, 1500);
